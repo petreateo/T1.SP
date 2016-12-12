@@ -13,7 +13,7 @@ x=+0.5+0.5*sawtooth(2*pi*t/P,17/40);
 % Determinam coeficientii SFE
 for k = -N:N %k este variabila dupa care se realizeaza suma
     xf = x; %xf e semnalul nostru realizat dupa formula SF data
-    xf = xf.*exp(-1j*k*2*pi*1/P*t); %de la prima tema .*=înmultire între doua matrice (sau vectori) element cu element
+    xf = xf.*exp(-1j*k*2*pi*1/P*t); %de la prima tema .*=Ã®nmultire Ã®ntre doua matrice (sau vectori) element cu element
     X(k+N+1) = trapz(t,xf); %functia realizeaza integrala trapezoidala returnand cea mai apropiata valoare.
                                                    
 end
